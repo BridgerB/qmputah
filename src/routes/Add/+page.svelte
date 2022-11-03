@@ -22,7 +22,7 @@
 	let discounts = null;
 	let insurance = false;
 
-	import { initializeApp, getApps, getApp } from 'firebase/app';
+	import { initializeApp } from 'firebase/app';
 	import { getDatabase, ref, update, serverTimestamp } from 'firebase/database';
 	const firebaseConfig = {
 		apiKey: 'AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4',

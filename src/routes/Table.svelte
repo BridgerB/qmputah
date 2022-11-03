@@ -58,10 +58,23 @@
 	{/if}
 </table>
 
+<div id="email">
+	<p>Did I miss one?</p>
+	<p>Email me at:</p>
+	<p>contact@qmputah.com</p>
+
+</div>
+
 <style>
+	#email {
+		text-align: center;
+		font-size: 2rem;
+		margin-top: 300px;
+
+		margin-bottom: 300px;
+	}
 	table {
 		font-size: 20px;
-		margin-bottom: 300px;
 		border-collapse: collapse;
 		margin-left: auto;
 		margin-right: auto;

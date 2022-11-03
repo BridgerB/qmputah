@@ -1,15 +1,15 @@
-<div class="links">
-	<a href="/">Home</a>
-	<a href="/About">About</a>
-	<a href="/Donate">Donate</a>
-</div>
 <title>qmputah</title>
 <body>
+	<header>
+		<a href="/">Home</a>
+		<a href="/About">About</a>
+		<a href="/Donate">Donate</a>
+	</header>
 	<slot />
 </body>
 
 <style>
-	.links {
+	header {
 		text-align: center;
 		padding: 30px;
 		background-color: #828f71;
@@ -27,7 +27,7 @@
 		background-color: #f5e4ce;
 	}
 	@media (orientation: portrait) {
-		.links {
+		header {
 			text-align: center;
 			padding: 30px;
 			background-color: #828f71;
