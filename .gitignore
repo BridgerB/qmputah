@@ -6,3 +6,5 @@ node_modules
 .env
 .env.*
 !.env.example
+firebase-debug.log
+.firebase/hosting.YnVpbGQ.cache
