@@ -1,2 +1,1 @@
-[qmputah.com(https://qmputah.com)
-Please [donate](https://qmputah.com/Donate)
+# View this projet at [qmputah.com](https://qmputah.com/)
