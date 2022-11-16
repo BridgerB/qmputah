@@ -1,3 +1,11 @@
+<svelte:head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+
+
+</svelte:head>
+
 <title>qmputah</title>
 <body>
 	<header>
@@ -9,10 +17,13 @@
 </body>
 
 <style>
+	* {
+	font-family: 'Didact Gothic', sans-serif;
+	}
 	header {
 		text-align: center;
 		padding: 30px;
-		background-color: #828f71;
+		background-color: #d3b973;
 		font-size: 30px;
 	}
 	a,
@@ -24,13 +35,12 @@
 		color: black;
 		margin: 0;
 		padding: 0;
-		background-color: #f5e4ce;
+		background-color: #5d8066;
 	}
 	@media (orientation: portrait) {
 		header {
 			text-align: center;
 			padding: 30px;
-			background-color: #828f71;
 			font-size: 30px;
 		}
 		a,

@@ -9,22 +9,22 @@
 
 	////////////////////////////////////////////////////////////////////////////
 	//firebase:
-	import { initializeApp } from 'firebase/app';
-	import { getAnalytics } from 'firebase/analytics';
-	const firebaseConfig = {
-		apiKey: 'AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4',
-		authDomain: 'qmputah-2022-10-06.firebaseapp.com',
-		databaseURL: 'https://qmputah-2022-10-06-default-rtdb.firebaseio.com',
-		projectId: 'qmputah-2022-10-06',
-		storageBucket: 'qmputah-2022-10-06.appspot.com',
-		messagingSenderId: '677877744052',
-		appId: '1:677877744052:web:8ad4b1d83774b5425072e1',
-		measurementId: 'G-E36TVKC3N0'
-	};
-	onMount(() => {
-		const app = initializeApp(firebaseConfig);
-		const analytics = getAnalytics(app);
-	});
+	// import { initializeApp } from 'firebase/app';
+	// import { getAnalytics } from 'firebase/analytics';
+	// const firebaseConfig = {
+	// 	apiKey: 'AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4',
+	// 	authDomain: 'qmputah-2022-10-06.firebaseapp.com',
+	// 	databaseURL: 'https://qmputah-2022-10-06-default-rtdb.firebaseio.com',
+	// 	projectId: 'qmputah-2022-10-06',
+	// 	storageBucket: 'qmputah-2022-10-06.appspot.com',
+	// 	messagingSenderId: '677877744052',
+	// 	appId: '1:677877744052:web:8ad4b1d83774b5425072e1',
+	// 	measurementId: 'G-E36TVKC3N0'
+	// };
+	// onMount(() => {
+	// 	const app = initializeApp(firebaseConfig);
+	// 	const analytics = getAnalytics(app);
+	// });
 	////////////////////////////////////////////////////////////////////////////
 </script>
 
@@ -33,13 +33,13 @@
 	<meta name="description" content="A tool to compare medical cannabis card pricing in Utah" />
 	<meta name="keywords" content="utah cannabis medical card price" />
 </svelte:head>
-<br />
-<br />
-<br />
+<!-- <br /> -->
+<!-- <br /> -->
+<!-- <br /> -->
 <Header />
 <div class="timeline">
-	<button on:click={() => (renew = false)} id="newCard">I'm here for my first medical card</button>
-	<button on:click={() => (renew = true)} id="renewCard">I'm here to renew my card</button>
+	<button on:click={() => (renew = false)} id="newCard">My first card</button>
+	<button on:click={() => (renew = true)} id="renewCard">Renew my card</button>
 </div>
 
 <body>
@@ -67,7 +67,8 @@
 		padding-left: 20px;
 		margin: auto;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		background-color: #828f71a3;
+		/* background-color: #828f71a3; */
+		background-color: #fff9ee;
 		color: black;
 		height: 80px;
 		border-radius: 15px;
@@ -75,7 +76,6 @@
 		cursor: pointer;
 		margin-top: 50px;
 		margin-bottom: 50px;
-		font-size: 1.7rem;
 	}
 
 	.timeline {
@@ -97,7 +97,7 @@
 			border-radius: 15px;
 			border: none;
 			cursor: pointer;
-			font-size: 1rem;
+			font-size: 1.2rem;
 			margin: 5px;
 			padding: 0.5rem;
 		}
@@ -108,7 +108,7 @@
 			grid-template-columns: 1fr 1fr;
 			margin: auto;
 			/* border: 3px solid blue; */
-			width: 80%;
+			width: 90%;
 			grid-template-areas: 'newCard renewCard';
 		}
 
