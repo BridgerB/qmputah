@@ -19,7 +19,7 @@
 
 <div class="grid-container">
 	<img src="aleafFlip.webp" alt="cannabis leaf" id="leafLeft" />
-	<h1 id="main"><b>QMP</b><br>UTAH</h1>
+	<h1 id="main">QMP<br>UTAH</h1>
 	<img src="aleaf.webp" alt="cannabis leaf" id="leafRight" />
   <p id="tagLine">Medical Card<br>Price Comparison Tool</p>
 </div>
