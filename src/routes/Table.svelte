@@ -20,7 +20,7 @@
 <table>
 	<tr>
 		<th id="practiceHead" style="width: 40%; ">Medical Practice</th>
-		<th id="priceHead" style="width: 20%; text-align: right;">Medical Card Price</th>
+		<th id="priceHead" style="width: 20%; text-align: right;">Price</th>
 		<th id="addressHead" style="width: 40%;">Address</th>
 	</tr>
 	{#if !renew}
@@ -74,7 +74,7 @@
 		margin-bottom: 300px;
 	}
 	table {
-		font-size: 20px;
+		/* font-size: 20px; */
 		border-collapse: collapse;
 		margin-left: auto;
 		margin-right: auto;
@@ -85,7 +85,7 @@
 	th {
 		padding-top: 10px;
 		padding-bottom: 10px;
-		background-color: #d4a88db8;
+		background-color: #d3b973;
 		text-align: left;
 		padding: 10px;
 	}
@@ -125,7 +125,7 @@
 	}
 
 	tr:nth-child(even) {
-		background: #dfd3ae;
+		background: #fff9ee;
 	}
 
 	tr:nth-child(odd) {
@@ -139,15 +139,15 @@
 		}
 
 		#address {
-			font-size: 0.9rem;
+			font-size: 1rem;
 		}
 
 		#price {
-			font-size: 1.5rem;
+			font-size: 1rem;
 		}
 
 		#practice {
-			font-size: 1.5rem;
+			font-size: 1rem;
 		}
 
 		.search {
