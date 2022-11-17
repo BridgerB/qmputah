@@ -20,8 +20,8 @@
 <table>
 	<tr>
 		<th id="practiceHead" style="width: 40%; ">Medical Practice</th>
-		<th id="priceHead" style="width: 20%; text-align: right;">Price</th>
-		<th id="addressHead" style="width: 40%;">Address</th>
+		<th id="priceHead" style="width: 5%; text-align: right;">Price</th>
+		<th id="addressHead" style="width: 55%;">Address</th>
 	</tr>
 	{#if !renew}
 		{#each qmpsActive as qmp}

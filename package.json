@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"private": false,
 	"scripts": {
-		"dev": "vite dev --open",
+		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
 		"lint": "prettier --plugin-search-dir . --check .",

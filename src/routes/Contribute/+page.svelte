@@ -3,7 +3,7 @@
 	//firebase:
 	import { onMount } from 'svelte';
 	import { initializeApp } from 'firebase/app';
-	import { getAnalytics } from 'firebase/analytics';
+	// import { getAnalytics } from 'firebase/analytics';
 	const firebaseConfig = {
 		apiKey: 'AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4',
 		authDomain: 'qmputah-2022-10-06.firebaseapp.com',
@@ -14,15 +14,31 @@
 		appId: '1:677877744052:web:8ad4b1d83774b5425072e1',
 		measurementId: 'G-E36TVKC3N0'
 	};
-	onMount(() => {
-		const app = initializeApp(firebaseConfig);
-		const analytics = getAnalytics(app);
-	});
+	// onMount(() => {
+	// 	const app = initializeApp(firebaseConfig);
+	// 	const analytics = getAnalytics(app);
+	// });
 	////////////////////////////////////////////////////////////////////////////
+
+
+</script>
+<svelte:head>
+<!-- <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="BridgerB" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script> -->
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('bridgerb', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Donate',
+    'floating-chat.donateButton.background-color': '#ff5f5f',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
 </script>
 
+
+</svelte:head>
 <header>
-	<h1>Donate</h1>
+	<h1>Contribute</h1>
 </header>
 
 <h3>Price Comparison Chart</h3>
@@ -31,7 +47,7 @@
 	<tr>
 		<th />
 		<th>Best price</th>
-		<th>Average price</th>
+		<th>"Average" price</th>
 		<th>Worst price</th>
 	</tr>
 	<tr>
@@ -63,11 +79,23 @@
 
 <div>
 	<p>This tool can save you up to $800 in your first year of having a Medical Cannabis Card in Utah.</p>
-	<p>Please donate a portion of those savings to keep this site running.</p>
-	<a href="https://www.buymeacoffee.com/BridgerB" target="_blank">Buy Me A Coffee</a><br /><br /><br />
-	<a href="https://paypal.me/BridgerBelyea" target="_blank">PayPal</a><br /><br /><br />
-	<a href="https://ko-fi.com/bridgerb" target="_blank">Ko-fi</a><br /><br />
+	<p>Please donate a portion of those savings to keep this site accurate and opperating.</p>
+	<p>Minimum donation is only $1 and will only take a moment.</p>
+	<a href="https://www.buymeacoffee.com/BridgerB" target="_blank">Buy Me A Coffee</a><br />
+	<a href="https://paypal.me/BridgerBelyea" target="_blank">PayPal</a><br />
+	<a href="https://ko-fi.com/bridgerb" target="_blank">Ko-fi (Offers Apple Pay)</a>
 </div>
+<br />
+<br />
+<br />
+<br />
+<div>
+	<p>If you are unable to donate please help out by suggesting or offering improvements to this projet on the github page.</p>
+</div>
+
+
+
+
 
 <style>
 	div {
@@ -85,7 +113,7 @@
 	a,
 	a:visited {
 		color: black;
-		padding: 3rem;
+		/* padding: 3rem; */
 	}
 
 	th {
@@ -147,8 +175,8 @@
 
 		a, a:visited {
 			color: black;
-			padding: 0rem;
-			font-size: 1.9rem;
+			/* padding: 0rem; */
+			font-size: 1.2rem;
 		}
 
 		h3 {
@@ -159,7 +187,7 @@
 		}
 
 		p {
-			font-size: 1.5rem;
+			font-size: 1.2rem;
 		}
 	}
 	

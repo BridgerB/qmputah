@@ -10,8 +10,8 @@
 <body>
 	<header>
 		<a href="/">Home</a>
-		<a href="/About">About</a>
-		<a href="/Donate">Donate</a>
+		<a href="/FAQ">FAQ</a>
+		<a href="/Contribute">Contribute</a>
 	</header>
 	<slot />
 </body>
@@ -46,7 +46,8 @@
 		a,
 		a:visited {
 			color: black;
-			padding: 7px;
+			/* padding: 7px; */
+			padding: 9px;
 		}
 	}
 </style>
