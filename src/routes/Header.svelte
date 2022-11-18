@@ -97,6 +97,7 @@
 		}
 
 		#leafLeft {
+			padding-top: 2vh;
 		/* max-width: 100%; */
 		height: auto;
 		/* border: dashed red; */
@@ -114,6 +115,7 @@
 			display: leafRight;
 			height: 6rem;
 			margin: auto;
+			padding-top: 2vh;
 			/* width: 100%; */
 			/* height: 100px; */
 			/* margin: auto; */

@@ -74,24 +74,31 @@
 	</table>
 	</div>
 	</CollapsibleSection>
-<CollapsibleSection headerText={`How much does cannabis itself cost?`} >
+<CollapsibleSection headerText={`How much does cannabis cost in Utah?`} >
 	<div class="content">
-		Pharmacies list their prices online. You can see a list of pharmacies on the state website: https://medicalcannabis.utah.gov/pharmacies/
+		Pharmacies list their prices online. You can see a list of pharmacies on the <a href="https://medicalcannabis.utah.gov/pharmacies/" target="_blank">State website</a>.
+
 	</div>
 	</CollapsibleSection>
 <CollapsibleSection headerText={`How can I suggest an edit to this website?`} >
 	<div class="content">
-	If you know how to code then please submit a pull request on github. If you don't know how to code then please submit an issue on our github or email me at contact@qmputah.com
+	Prefered: 
+	<br />
+	If you know how to code then please submit a pull request on <a href="https://github.com/BridgerB/qmputah" target="_blank">github</a>. If you don't know how to code then please submit an issue on <a href="https://github.com/BridgerB/qmputah/issues" target="_blank">github</a>
+	<br />
+	Unpreferred: 
+	<br />
+	Email me at	<a href = "mailto: contact@qmputah.com">contact@qmputah.com</a>
 	</div>
 	</CollapsibleSection>
 <CollapsibleSection headerText={`Is this project actively being worked on?`} >
 	<div class="content">
-	Yes
+	Yes! You can see updates as they happen on <a href="https://github.com/BridgerB/qmputah" target="_blank">github</a>.
 	</div>
 	</CollapsibleSection>
 <CollapsibleSection headerText={`How can I help this project succeed?`} >
 	<div class="content">
-	Please visit our "Contribute" page.
+	Please visit our <a href="/Contribute">Contribute</a> page.
 	</div>
 	</CollapsibleSection>
 <CollapsibleSection headerText={`Am I eligible for a medical card?`} >
@@ -101,8 +108,8 @@
   </CollapsibleSection>
 <CollapsibleSection headerText={`What if I don't see my question here?`} >
 	<div class="content">
-  The state FAQ page might be able to help: https://medicalcannabis.utah.gov/patients/
-	</div>
+  The <a href="https://medicalcannabis.utah.gov/patients/" target="_blank">State FAQ page</a> might be able to help.
+  </div>
   </CollapsibleSection>
 
 	

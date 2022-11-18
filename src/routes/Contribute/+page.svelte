@@ -19,24 +19,11 @@
 	// 	const analytics = getAnalytics(app);
 	// });
 	////////////////////////////////////////////////////////////////////////////
-
-
-</script>
-<svelte:head>
-<!-- <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="BridgerB" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script> -->
-
-<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<script>
-  kofiWidgetOverlay.draw('bridgerb', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Donate',
-    'floating-chat.donateButton.background-color': '#ff5f5f',
-    'floating-chat.donateButton.text-color': '#fff'
-  });
 </script>
 
 
-</svelte:head>
+
+
 <header>
 	<h1>Contribute</h1>
 </header>
@@ -47,7 +34,7 @@
 	<tr>
 		<th />
 		<th>Best price</th>
-		<th>"Average" price</th>
+		<th>Average price</th>
 		<th>Worst price</th>
 	</tr>
 	<tr>
@@ -81,16 +68,14 @@
 	<p>This tool can save you up to $800 in your first year of having a Medical Cannabis Card in Utah.</p>
 	<p>Please donate a portion of those savings to keep this site accurate and opperating.</p>
 	<p>Minimum donation is only $1 and will only take a moment.</p>
-	<a href="https://www.buymeacoffee.com/BridgerB" target="_blank">Buy Me A Coffee</a><br />
-	<a href="https://paypal.me/BridgerBelyea" target="_blank">PayPal</a><br />
-	<a href="https://ko-fi.com/bridgerb" target="_blank">Ko-fi (Offers Apple Pay)</a>
+	<ul>
+	<li><a href="https://www.buymeacoffee.com/BridgerB" target="_blank">Buy Me A Coffee</a><br /></li>
+	<li><a href="https://paypal.me/BridgerBelyea" target="_blank">PayPal</a><br /></li>
+	<li><a href="https://ko-fi.com/bridgerb" target="_blank">Ko-fi (Offers Apple Pay)</a></li>
+	</ul>
 </div>
-<br />
-<br />
-<br />
-<br />
 <div>
-	<p>If you are unable to donate please help out by suggesting or offering improvements to this projet on the github page.</p>
+	<p>If you are unable to donate please help out by suggesting or offering improvements to this projet on <a href="https://github.com/BridgerB/qmputah" target="_blank">github</a>.</p>
 </div>
 
 
