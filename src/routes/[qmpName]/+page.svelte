@@ -4,7 +4,7 @@
 	////////////////////////////////////////////////////////////////////////////
 	//firebase:
 	import { initializeApp } from 'firebase/app';
-	import { getAnalytics } from 'firebase/analytics';
+	// import { getAnalytics } from 'firebase/analytics';
 	const firebaseConfig = {
 		apiKey: 'AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4',
 		authDomain: 'qmputah-2022-10-06.firebaseapp.com',
@@ -17,7 +17,7 @@
 	};
 	onMount(() => {
 		const app = initializeApp(firebaseConfig);
-		const analytics = getAnalytics(app);
+		// const analytics = getAnalytics(app);
 	});
 	////////////////////////////////////////////////////////////////////////////
 	let qmp = data.qmp;
@@ -168,63 +168,64 @@
 </body>
 
 <style>
-	#map {
-		height: 80%;
-		margin: auto;
-		width: 80%;
-		grid-area: map;
-	}
-
-	.info {
-		width: 100%;
-		margin: auto;
-		grid-area: info;
-	}
-
-	.myChart {
-		padding-top: 20px;
-		margin: auto;
-		height: 500px;
-		width: 100%;
-		grid-area: myChart;
-	}
-
-	* {
-		color: black;
-	}
-
-	a, a:visited {
-		color: black;
-	}
-
-	p {
-		font-size: 1.5rem;
-		padding-left: 20px;
-	}
-
-	h3 {
-		font-size: 1.5rem;
-		padding-left: 10px;
-	}
-
-	h1 {
-		text-align: center;
-	}
-
-	.grid-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-		grid-gap: 10px;
-		padding: 5vw;
-
-		grid-template-areas:
-			'info map'
-			'myChart myChart';
-	}
-
+	/* #map { */
+	/* 	height: 80%; */
+	/* 	margin: auto; */
+	/* 	width: 80%; */
+	/* 	grid-area: map; */
+	/* } */
+	/**/
+	/* .info { */
+	/* 	width: 100%; */
+	/* 	margin: auto; */
+	/* 	grid-area: info; */
+	/* } */
+	/**/
+	/* .myChart { */
+	/* 	padding-top: 20px; */
+	/* 	margin: auto; */
+	/* 	height: 500px; */
+	/* 	width: 100%; */
+	/* 	grid-area: myChart; */
+	/* } */
+	/**/
+	/* * { */
+	/* 	color: black; */
+	/* } */
+	/**/
+	/* a, a:visited { */
+	/* 	color: black; */
+	/* } */
+	/**/
+	/* p { */
+	/* 	font-size: 1.5rem; */
+	/* 	padding-left: 20px; */
+	/* } */
+	/**/
+	/* h3 { */
+	/* 	font-size: 1.5rem; */
+	/* 	padding-left: 10px; */
+	/* } */
+	/**/
+	/* h1 { */
+	/* 	text-align: center; */
+	/* } */
+	/**/
+	/* .grid-container { */
+	/* 	display: grid; */
+	/* 	grid-template-columns: 1fr 1fr; */
+	/* 	grid-template-rows: 1fr 1fr; */
+	/* 	grid-gap: 10px; */
+	/* 	padding: 5vw; */
+	/**/
+	/* 	grid-template-areas: */
+	/* 		'info map' */
+	/* 		'myChart myChart'; */
+	/* } */
+	/**/
 	@media (orientation: portrait) {
 		.grid-container {
+			/* max-width: 80%; */
 			display: grid;
 			grid-template-columns: 1fr;
 			grid-template-rows: 1fr 1fr 1fr;
@@ -238,7 +239,7 @@
 			max-height: 400px;
 			height: 80%;
 			/* margin: auto; */
-			width: 90%;
+			/* width: 90%; */
 			grid-area: map;
 		}
 
@@ -248,11 +249,11 @@
 		}
 
 		p {
-			font-size: 1.5rem;
+			font-size: 1.0rem;
 		}
 
 		.info {
-			width: 100%;
+			/* width: 70%; */
 		}
 
 	}

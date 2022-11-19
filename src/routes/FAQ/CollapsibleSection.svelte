@@ -8,7 +8,7 @@
 
 <div class="collapsible">
     <h3>
-        <button aria-expanded={expanded} on:click={() => expanded = !expanded}>{headerText}
+        <button aria-expanded={expanded} on:click={() => expanded = !expanded}><p class = faqq>{headerText}</p>
 <svg viewBox="0 0 20 20" fill="none" >
 <path class="vert" d="M10 1V19" stroke="black" stroke-width="2"/>
 <path d="M1 10L19 10" stroke="black" stroke-width="2"/>
@@ -22,6 +22,12 @@
 </div>
 
 <style>
+    .faqq {
+    color: black;
+    font-size: .8rem;
+    margin: 0;
+    padding: 0;
+    }
   .collapsible {
     border-bottom: 1px solid var(--gray-light, #eee);
   }
@@ -60,5 +66,9 @@
     svg {
         height: 0.7em;
 				width: 0.7em;
+    }
+
+    .content {
+        color: green;
     }
 </style>
