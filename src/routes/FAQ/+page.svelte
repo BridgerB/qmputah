@@ -25,9 +25,9 @@
 <h1>FAQ</h1>
 
 <section>
-<CollapsibleSection headerText={'Why do the prices range from $100 to $500?'}>
+<CollapsibleSection headerText={'What is a QMP?'}>
 	<div class="content">
-		<p>Great question...</p>
+		<p>A QMP is the person you get your medical card from.</p>
 	</div>
 </CollapsibleSection>
 <CollapsibleSection headerText={`Why is the States version of this website so inacurate? `} >
@@ -35,12 +35,6 @@
 	<p>Great question...</p>
 	</div>
 </CollapsibleSection>
-<CollapsibleSection headerText={`What does QMP stand for?`} >
-	<div class="content">
-	<p>Qualified Medical Provider. It is the person who would prescribe you your medical card.</p>
-	</div>
-	</CollapsibleSection>
-
 <CollapsibleSection headerText={`What does it ACTUALLY cost?`} >
 	<div class="content">
 	<p>Lets put it this way. What is the least I can spend to legally use cannabis in Utah?</p>
@@ -80,17 +74,7 @@
 
 	</div>
 	</CollapsibleSection>
-<CollapsibleSection headerText={`How can I suggest an edit to this website?`} >
-	<div class="content">
-	<p>Prefered:</p>
-	<br />
-	<p>If you know how to code then please submit a pull request on <a href="https://github.com/BridgerB/qmputah" target="_blank">github</a>. If you don't know how to code then please submit an issue on <a href="https://github.com/BridgerB/qmputah/issues" target="_blank">github</a></p>
-	<br />
-	<p>Unpreferred: </p>
-	<br />
-	<p>Email me at	<a href = "mailto: contact@qmputah.com">contact@qmputah.com</a></p>
-	</div>
-	</CollapsibleSection>
+
 <CollapsibleSection headerText={`Is this project actively being worked on?`} >
 	<div class="content">
 	<p>Yes! You can see updates as they happen on <a href="https://github.com/BridgerB/qmputah" target="_blank">github</a>.</p>
@@ -103,7 +87,8 @@
 	</CollapsibleSection>
 <CollapsibleSection headerText={`Am I eligible for a medical card?`} >
 	<div class="content">
-   <p>You will need to ask your QMP. I am not a QMP. I remember hearing ~80% of patients use cannabis for pain. (*citation needed*)</p>
+   <p>Please see the <a href="https://medicalcannabis.utah.gov/ufaqs/what-are-the-qualifying-conditions/" target="_blank">States list of qualifying conditions</a></p>
+   <p>The only qualifying condition that requires a doctor's note is PTSD. The most common qualifying condition is pain.</p>
 	</div>
   </CollapsibleSection>
 <CollapsibleSection headerText={`What if I don't see my question here?`} >
@@ -111,7 +96,21 @@
   <p>The <a href="https://medicalcannabis.utah.gov/patients/" target="_blank">State FAQ page</a> might be able to help.</p>
   </div>
   </CollapsibleSection>
+<CollapsibleSection headerText={`How does this website work?`} >
+	<div class="content">
+	<p>This website is updated daily at 9:00am to show you the most accurate medical card pricing in Utah.</p>
+	</div>
+	</CollapsibleSection>
 
+	<CollapsibleSection headerText={`How can I suggest an edit to this website?`} >
+	<div class="content">
+	<p>Prefered (in order to keep this website transparent):</p>
+	<p>If you know how to code then please submit a pull request on <a href="https://github.com/BridgerB/qmputah" target="_blank">github</a>. If you don't know how to code then please submit an issue on <a href="https://github.com/BridgerB/qmputah/issues" target="_blank">github</a></p>
+	<br />
+	<p>Unpreferred (because I want to keep this website as transparent as possible): </p>
+	<p>Email me at	<a href = "mailto: contact@qmputah.com">contact@qmputah.com</a></p>
+	</div>
+	</CollapsibleSection>
 </section>
 
 <style>
