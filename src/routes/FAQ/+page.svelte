@@ -27,7 +27,7 @@
 <section>
 <CollapsibleSection headerText={'What is a QMP?'}>
 	<div class="content">
-		<p>A QMP is the person you get your medical card from.</p>
+		<p>A Qualified Medical Provider is the person you get your medical card from.</p>
 	</div>
 </CollapsibleSection>
 <CollapsibleSection headerText={`Why is the States version of this website so inacurate? `} >
@@ -77,7 +77,7 @@
 
 <CollapsibleSection headerText={`Is this project actively being worked on?`} >
 	<div class="content">
-	<p>Yes! You can see updates as they happen on <a href="https://github.com/BridgerB/qmputah" target="_blank">github</a>.</p>
+	<p>Yes! You can see updates as they happen on <a href="https://github.com/BridgerB/qmputah" target="_blank">GitHub</a>.</p>
 	</div>
 	</CollapsibleSection>
 <CollapsibleSection headerText={`How can I help this project succeed?`} >
@@ -105,7 +105,8 @@
 	<CollapsibleSection headerText={`How can I suggest an edit to this website?`} >
 	<div class="content">
 	<p>Prefered (in order to keep this website transparent):</p>
-	<p>If you know how to code then please submit a pull request on <a href="https://github.com/BridgerB/qmputah" target="_blank">github</a>. If you don't know how to code then please submit an issue on <a href="https://github.com/BridgerB/qmputah/issues" target="_blank">github</a></p>
+	<p>If you know how to code then please submit a pull request on <a href="https://github.com/BridgerB/qmputah" target="_blank">GitHub</a>.</p>
+	<p>If you don't know how to code then please submit an issue on <a href="https://github.com/BridgerB/qmputah/issues" target="_blank">GitHub</a></p>
 	<br />
 	<p>Unpreferred (because I want to keep this website as transparent as possible): </p>
 	<p>Email me at	<a href = "mailto: contact@qmputah.com">contact@qmputah.com</a></p>
