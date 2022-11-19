@@ -1,30 +1,29 @@
-<!-- <script> -->
-<!-- 	//////////////////////////////////////////////////////////////////////////// -->
-<!-- 	//firebase: -->
-<!-- 	import { onMount } from 'svelte'; -->
-<!-- 	import { initializeApp } from 'firebase/app'; -->
-<!-- 	// import { getAnalytics } from 'firebase/analytics'; -->
-<!-- 	const firebaseConfig = { -->
-<!-- 		apiKey: 'AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4', -->
-<!-- 		authDomain: 'qmputah-2022-10-06.firebaseapp.com', -->
-<!-- 		databaseURL: 'https://qmputah-2022-10-06-default-rtdb.firebaseio.com', -->
-<!-- 		projectId: 'qmputah-2022-10-06', -->
-<!-- 		storageBucket: 'qmputah-2022-10-06.appspot.com', -->
-<!-- 		messagingSenderId: '677877744052', -->
-<!-- 		appId: '1:677877744052:web:8ad4b1d83774b5425072e1', -->
-<!-- 		measurementId: 'G-E36TVKC3N0' -->
-<!-- 	}; -->
-<!-- 	onMount(() => { -->
-<!-- 		const app = initializeApp(firebaseConfig); -->
-<!-- 		const analytics = getAnalytics(app); -->
-<!-- 	}); -->
-<!-- 	//////////////////////////////////////////////////////////////////////////// -->
-<!-- </script> -->
 <script>
 	import CollapsibleSection from './CollapsibleSection.svelte'
+	////////////////////////////////////////////////////////////////////////////
+	//firebase:
+	import { onMount } from 'svelte';
+	import { initializeApp } from 'firebase/app';
+	import { getAnalytics } from 'firebase/analytics';
+	const firebaseConfig = {
+		apiKey: 'AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4',
+		authDomain: 'qmputah-2022-10-06.firebaseapp.com',
+		databaseURL: 'https://qmputah-2022-10-06-default-rtdb.firebaseio.com',
+		projectId: 'qmputah-2022-10-06',
+		storageBucket: 'qmputah-2022-10-06.appspot.com',
+		messagingSenderId: '677877744052',
+		appId: '1:677877744052:web:8ad4b1d83774b5425072e1',
+		measurementId: 'G-E36TVKC3N0'
+	};
+	onMount(() => {
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	});
+	////////////////////////////////////////////////////////////////////////////
 </script>
 
 <h1>FAQ</h1>
+
 <section>
 <CollapsibleSection headerText={'Why do the prices range from $100 to $500?'}>
 	<div class="content">
@@ -45,6 +44,7 @@
 <CollapsibleSection headerText={`What does it ACTUALLY cost?`} >
 	<div class="content">
 	<p>Lets put it this way. What is the least I can spend to legally use cannabis in Utah?</p>
+	<br />
 	<table>
 	<tr>
 		<th />
@@ -103,7 +103,7 @@
 	</CollapsibleSection>
 <CollapsibleSection headerText={`Am I eligible for a medical card?`} >
 	<div class="content">
-   <p>You will need to ask your QMP. I am not a QMP. I remember hearing ~80% of patients use cannabis for pain.</p>
+   <p>You will need to ask your QMP. I am not a QMP. I remember hearing ~80% of patients use cannabis for pain. (*citation needed*)</p>
 	</div>
   </CollapsibleSection>
 <CollapsibleSection headerText={`What if I don't see my question here?`} >
@@ -130,6 +130,7 @@
 		margin: auto;
 		font-size: 1.2rem;
 		/* color: green; */
+		padding-bottom: 20vh;
 		
 	}
 	
@@ -178,5 +179,18 @@
 		background: #ebe3cd;
 	}
 
+	@media (orientation: landscape) {
+		table {
+		max-width: 550px;
+		}
+	section {
+		max-width: 1000px;
+		/* margin: auto; */
+		font-size: 1.2rem;
+		/* color: green; */
+		
+	}
+
+	}
 	
 </style>

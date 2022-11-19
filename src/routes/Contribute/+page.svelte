@@ -3,7 +3,7 @@
 	//firebase:
 	import { onMount } from 'svelte';
 	import { initializeApp } from 'firebase/app';
-	// import { getAnalytics } from 'firebase/analytics';
+	import { getAnalytics } from 'firebase/analytics';
 	const firebaseConfig = {
 		apiKey: 'AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4',
 		authDomain: 'qmputah-2022-10-06.firebaseapp.com',
@@ -14,15 +14,15 @@
 		appId: '1:677877744052:web:8ad4b1d83774b5425072e1',
 		measurementId: 'G-E36TVKC3N0'
 	};
-	// onMount(() => {
-	// 	const app = initializeApp(firebaseConfig);
-	// 	const analytics = getAnalytics(app);
-	// });
+	onMount(() => {
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	});
 	////////////////////////////////////////////////////////////////////////////
 </script>
 
 
-
+<body>
 
 <header>
 	<h1>Contribute</h1>
@@ -77,7 +77,7 @@
 <div>
 	<p>If you are unable to donate please help out by suggesting or offering improvements to this projet on <a href="https://github.com/BridgerB/qmputah" target="_blank">github</a>.</p>
 </div>
-
+</body>
 
 
 
@@ -98,6 +98,7 @@
 	a,
 	a:visited {
 		color: black;
+		font-size: 1.2rem;
 		/* padding: 3rem; */
 	}
 
@@ -127,10 +128,11 @@
 		border-collapse: collapse;
 		background-color: rgb(212, 135, 90);
 		font-size: 20px;
-		width: 60%;
+		width: 90%;
 		text-align: left;
 		background-color: #ad8972;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		table-layout: auto;
 	}
 
 	tr:nth-child(even) {
@@ -148,31 +150,26 @@
 	h3 {
 		margin: auto;
 		font-size: 2rem;
-		width: 70%;
+		width: 100%;
 		text-align: center;
 	}
 
-	@media (orientation: portrait) {
-		table {
-			table-layout: auto;
-			width: 90%;
-		}
 
-		a, a:visited {
-			color: black;
-			/* padding: 0rem; */
-			font-size: 1.2rem;
-		}
-
-		h3 {
-			margin: auto;
-			font-size: 2rem;
-			width: 100%;
-			text-align: center;
-		}
 
 		p {
 			font-size: 1.2rem;
+		}
+	
+
+	@media (orientation: landscape) {
+
+		table {
+			max-width: 700px;
+
+		}
+		body {
+		max-width: 1200px;
+		margin: auto;
 		}
 	}
 	

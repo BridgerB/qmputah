@@ -71,4 +71,11 @@
     .content {
         color: green;
     }
+
+	@media (orientation: landscape) {
+        .faqq {
+        font-size: 1.2rem;
+        }
+	}
+    
 </style>

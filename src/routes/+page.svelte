@@ -9,22 +9,22 @@
 
 	////////////////////////////////////////////////////////////////////////////
 	//firebase:
-	// import { initializeApp } from 'firebase/app';
-	// import { getAnalytics } from 'firebase/analytics';
-	// const firebaseConfig = {
-	// 	apiKey: 'AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4',
-	// 	authDomain: 'qmputah-2022-10-06.firebaseapp.com',
-	// 	databaseURL: 'https://qmputah-2022-10-06-default-rtdb.firebaseio.com',
-	// 	projectId: 'qmputah-2022-10-06',
-	// 	storageBucket: 'qmputah-2022-10-06.appspot.com',
-	// 	messagingSenderId: '677877744052',
-	// 	appId: '1:677877744052:web:8ad4b1d83774b5425072e1',
-	// 	measurementId: 'G-E36TVKC3N0'
-	// };
-	// onMount(() => {
-	// 	const app = initializeApp(firebaseConfig);
-	// 	const analytics = getAnalytics(app);
-	// });
+	import { initializeApp } from 'firebase/app';
+	import { getAnalytics } from 'firebase/analytics';
+	const firebaseConfig = {
+		apiKey: 'AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4',
+		authDomain: 'qmputah-2022-10-06.firebaseapp.com',
+		databaseURL: 'https://qmputah-2022-10-06-default-rtdb.firebaseio.com',
+		projectId: 'qmputah-2022-10-06',
+		storageBucket: 'qmputah-2022-10-06.appspot.com',
+		messagingSenderId: '677877744052',
+		appId: '1:677877744052:web:8ad4b1d83774b5425072e1',
+		measurementId: 'G-E36TVKC3N0'
+	};
+	onMount(() => {
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	});
 	////////////////////////////////////////////////////////////////////////////
 </script>
 
@@ -63,19 +63,17 @@
 	}
 
 	button {
-		padding-right: 20px;
-		padding-left: 20px;
-		margin: auto;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		/* background-color: #828f71a3; */
 		background-color: #fff9ee;
-		color: black;
 		height: 80px;
 		border-radius: 15px;
 		border: none;
 		cursor: pointer;
 		margin-top: 50px;
 		margin-bottom: 50px;
+		font-size: 1.2rem;
+		margin: 5px;
+		padding: 0.5rem;
 	}
 
 	.timeline {
@@ -83,41 +81,21 @@
 		margin: auto;
 		width: 60%;
 		display: grid;
+		padding-top: 20px;
+		width: 90%;
 		grid-template-columns: 1fr 1fr;
-		grid-template-areas: 'first renew';
+		grid-template-areas: 'newCard renewCard';
 	}
 	input[type='checkbox'] {
 		transform: scale(1.5);
 	}
 
-	@media (orientation: portrait) {
-		button {
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			color: black;
-			border-radius: 15px;
-			border: none;
-			cursor: pointer;
-			font-size: 1.2rem;
-			margin: 5px;
-			padding: 0.5rem;
-		}
+	@media (orientation: landscape) {
+	button {
+	
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 
-		.timeline {
-			padding-top: 20px;
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			margin: auto;
-			/* border: 3px solid blue; */
-			width: 90%;
-			grid-template-areas: 'newCard renewCard';
-		}
-
-		#newCard {
-			grid-area: newCard;
-		}
-
-		#renewCard {
-			grid-area: renewCard;
-		}
 	}
 </style>

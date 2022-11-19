@@ -40,7 +40,7 @@
 	@media (orientation: portrait) {
 		header {
 			text-align: center;
-			padding: 30px;
+			padding: 25px;
 			font-size: 30px;
 		}
 		a,

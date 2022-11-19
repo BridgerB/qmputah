@@ -4,7 +4,7 @@
 	////////////////////////////////////////////////////////////////////////////
 	//firebase:
 	import { initializeApp } from 'firebase/app';
-	// import { getAnalytics } from 'firebase/analytics';
+	import { getAnalytics } from 'firebase/analytics';
 	const firebaseConfig = {
 		apiKey: 'AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4',
 		authDomain: 'qmputah-2022-10-06.firebaseapp.com',
@@ -17,7 +17,7 @@
 	};
 	onMount(() => {
 		const app = initializeApp(firebaseConfig);
-		// const analytics = getAnalytics(app);
+		const analytics = getAnalytics(app);
 	});
 	////////////////////////////////////////////////////////////////////////////
 	let qmp = data.qmp;
