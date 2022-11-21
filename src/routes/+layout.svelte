@@ -24,6 +24,7 @@
 		text-align: center;
 		padding: 30px;
 		background-color: #d3b973;
+		/* background-color: #d3af5e; I like this gold */
 		font-size: 30px;
 	}
 	a,
@@ -36,6 +37,7 @@
 		margin: 0;
 		padding: 0;
 		background-color: #5d8066;
+		/* background-color: #314e28; I like this green */
 	}
 	@media (orientation: portrait) {
 		header {
