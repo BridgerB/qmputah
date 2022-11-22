@@ -1,5 +1,5 @@
 <script>
-	import CollapsibleSection from './CollapsibleSection.svelte'
+	import CollapsibleSection from './CollapsibleSection.svelte';
 	////////////////////////////////////////////////////////////////////////////
 	//firebase:
 	import { onMount } from 'svelte';
@@ -21,103 +21,131 @@
 	});
 	////////////////////////////////////////////////////////////////////////////
 </script>
-
 <h1>FAQ</h1>
-
 <section>
-<CollapsibleSection headerText={'What is a QMP?'}>
-	<div class="content">
-		<p>A Qualified Medical Provider is the person you get your medical card from.</p>
-	</div>
-</CollapsibleSection>
-<CollapsibleSection headerText={`Why is the States version of this website so inacurate? `} >
-	<div class="content">
-	<p>Great question...</p>
-	</div>
-</CollapsibleSection>
-<CollapsibleSection headerText={`What does it ACTUALLY cost?`} >
-	<div class="content">
-	<p>Lets put it this way. What is the least I can spend to legally use cannabis in Utah?</p>
-	<br />
-	<table>
-	<tr>
-		<th />
-		<th>Price</th>
-	</tr>
-	<tr>
-		<td>Card</td>
-		<td>$100</td>
-	</tr>
-	<tr>
-		<td>State Fee</td>
-		<td>$15</td>
-	</tr>
-	<tr>
-		<td>10 pack of edibles</td>
-		<td>$10</td>
-	</tr>
-	<tr>
-		<td>State Tax</td>
-		<td>$3</td>
-	</tr>
-	<tr>
-		<td>Total</td>
-		<td>$128</td>
-	</tr>
-
-	</table>
-	</div>
+	<CollapsibleSection headerText={'What is a QMP?'}>
+		<div class="content">
+			<p>A Qualified Medical Provider is the person you get your medical card from.</p>
+		</div>
 	</CollapsibleSection>
-<CollapsibleSection headerText={`How much does cannabis cost in Utah?`} >
-	<div class="content">
-		<p>Pharmacies list their prices online. You can see a list of pharmacies on the <a href="https://medicalcannabis.utah.gov/pharmacies/" target="_blank">State website</a>.</p>
-
-	</div>
+	<CollapsibleSection headerText={`Why is the States version of this website so inacurate? `}>
+		<div class="content">
+			<p>Great question...</p>
+		</div>
 	</CollapsibleSection>
-
-<CollapsibleSection headerText={`Is this project actively being worked on?`} >
-	<div class="content">
-	<p>Yes! You can see updates as they happen on <a href="https://github.com/BridgerB/qmputah" target="_blank">GitHub</a>.</p>
-	</div>
+	<CollapsibleSection headerText={`What does it ACTUALLY cost?`}>
+		<div class="content">
+			<p>Lets put it this way. What is the least I can spend to legally use cannabis in Utah?</p>
+			<br />
+			<table>
+				<tr>
+					<th />
+					<th>Price</th>
+				</tr>
+				<tr>
+					<td>Card</td>
+					<td>$100</td>
+				</tr>
+				<tr>
+					<td>State Fee</td>
+					<td>$15</td>
+				</tr>
+				<tr>
+					<td>10 pack of edibles</td>
+					<td>$10</td>
+				</tr>
+				<tr>
+					<td>State Tax</td>
+					<td>$3</td>
+				</tr>
+				<tr>
+					<td>Total</td>
+					<td>$128</td>
+				</tr>
+			</table>
+		</div>
 	</CollapsibleSection>
-<CollapsibleSection headerText={`How can I help this project succeed?`} >
-	<div class="content">
-	<p>Please visit our <a href="/Contribute">Contribute</a> page.</p>
-	</div>
-	</CollapsibleSection>
-<CollapsibleSection headerText={`Am I eligible for a medical card?`} >
-	<div class="content">
-   <p>Please see the <a href="https://medicalcannabis.utah.gov/ufaqs/what-are-the-qualifying-conditions/" target="_blank">States list of qualifying conditions</a></p>
-   <p>The only qualifying condition that requires a doctor's note is PTSD. The most common qualifying condition is pain.</p>
-	</div>
-  </CollapsibleSection>
-<CollapsibleSection headerText={`What if I don't see my question here?`} >
-	<div class="content">
-  <p>The <a href="https://medicalcannabis.utah.gov/patients/" target="_blank">State FAQ page</a> might be able to help.</p>
-  </div>
-  </CollapsibleSection>
-<CollapsibleSection headerText={`How does this website work?`} >
-	<div class="content">
-	<p>This website is updated daily at 9:00am to show you the most accurate medical card pricing in Utah.</p>
-	</div>
+	<CollapsibleSection headerText={`How much does cannabis cost in Utah?`}>
+		<div class="content">
+			<p>
+				Pharmacies list their prices online. You can see a list of pharmacies on the <a
+					href="https://medicalcannabis.utah.gov/pharmacies/"
+					target="_blank">State website</a
+				>.
+			</p>
+		</div>
 	</CollapsibleSection>
 
-	<CollapsibleSection headerText={`How can I suggest an edit to this website?`} >
-	<div class="content">
-	<p>Prefered (in order to keep this website transparent):</p>
-	<p>If you know how to code then please submit a pull request on <a href="https://github.com/BridgerB/qmputah" target="_blank">GitHub</a>.</p>
-	<p>If you don't know how to code then please submit an issue on <a href="https://github.com/BridgerB/qmputah/issues" target="_blank">GitHub</a></p>
-	<br />
-	<p>Unpreferred (because I want to keep this website as transparent as possible): </p>
-	<p>Email me at	<a href = "mailto: contact@qmputah.com">contact@qmputah.com</a></p>
-	</div>
+	<CollapsibleSection headerText={`Is this project actively being worked on?`}>
+		<div class="content">
+			<p>
+				Yes! You can see updates as they happen on <a
+					href="https://github.com/BridgerB/qmputah"
+					target="_blank">GitHub</a
+				>.
+			</p>
+		</div>
+	</CollapsibleSection>
+	<CollapsibleSection headerText={`How can I help this project succeed?`}>
+		<div class="content">
+			<p>Please visit our <a href="/Contribute">Contribute</a> page.</p>
+		</div>
+	</CollapsibleSection>
+	<CollapsibleSection headerText={`Am I eligible for a medical card?`}>
+		<div class="content">
+			<p>
+				Please see the <a
+					href="https://medicalcannabis.utah.gov/ufaqs/what-are-the-qualifying-conditions/"
+					target="_blank">States list of qualifying conditions</a
+				>
+			</p>
+			<p>
+				The only qualifying condition that requires a doctor's note is PTSD. The most common
+				qualifying condition is pain.
+			</p>
+		</div>
+	</CollapsibleSection>
+	<CollapsibleSection headerText={`What if I don't see my question here?`}>
+		<div class="content">
+			<p>
+				The <a href="https://medicalcannabis.utah.gov/patients/" target="_blank">State FAQ page</a> might
+				be able to help.
+			</p>
+		</div>
+	</CollapsibleSection>
+	<CollapsibleSection headerText={`How does this website work?`}>
+		<div class="content">
+			<p>
+				This website is updated daily at 9:00am to show you the most accurate medical card pricing
+				in Utah.
+			</p>
+		</div>
+	</CollapsibleSection>
+
+	<CollapsibleSection headerText={`How can I suggest an edit to this website?`}>
+		<div class="content">
+			<p>Prefered (in order to keep this website transparent):</p>
+			<p>
+				If you know how to code then please submit a pull request on <a
+					href="https://github.com/BridgerB/qmputah"
+					target="_blank">GitHub</a
+				>.
+			</p>
+			<p>
+				If you don't know how to code then please submit an issue on <a
+					href="https://github.com/BridgerB/qmputah/issues"
+					target="_blank">GitHub</a
+				>
+			</p>
+			<br />
+			<p>Unpreferred (because I want to keep this website as transparent as possible):</p>
+			<p>Email me at <a href="mailto: contact@qmputah.com">contact@qmputah.com</a></p>
+		</div>
 	</CollapsibleSection>
 </section>
 
 <style>
-
 	p {
-		/* font-size: 1.5rem; */
 		padding: 0;
 		margin: 0;
 	}
@@ -129,11 +157,9 @@
 		width: 90%;
 		margin: auto;
 		font-size: 1.2rem;
-		/* color: green; */
 		padding-bottom: 20vh;
-		
 	}
-	
+
 	.content {
 		background-color: #f4f4f4;
 		padding: 0.5em;
@@ -168,29 +194,23 @@
 		width: 80%;
 		text-align: left;
 		background-color: #ad8972;
-		/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 	}
 
 	tr:nth-child(even) {
 		background: #dfd3ae;
 	}
-	
+
 	tr:nth-child(odd) {
 		background: #ebe3cd;
 	}
 
 	@media (orientation: landscape) {
 		table {
-		max-width: 550px;
+			max-width: 550px;
 		}
-	section {
-		max-width: 1000px;
-		/* margin: auto; */
-		font-size: 1.2rem;
-		/* color: green; */
-		
+		section {
+			max-width: 1000px;
+			font-size: 1.2rem;
+		}
 	}
-
-	}
-	
 </style>

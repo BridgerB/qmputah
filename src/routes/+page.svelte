@@ -9,22 +9,22 @@
 
 	////////////////////////////////////////////////////////////////////////////
 	//firebase:
-	// import { initializeApp } from 'firebase/app';
-	// import { getAnalytics } from 'firebase/analytics';
-	// const firebaseConfig = {
-	// 	apiKey: 'AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4',
-	// 	authDomain: 'qmputah-2022-10-06.firebaseapp.com',
-	// 	databaseURL: 'https://qmputah-2022-10-06-default-rtdb.firebaseio.com',
-	// 	projectId: 'qmputah-2022-10-06',
-	// 	storageBucket: 'qmputah-2022-10-06.appspot.com',
-	// 	messagingSenderId: '677877744052',
-	// 	appId: '1:677877744052:web:8ad4b1d83774b5425072e1',
-	// 	measurementId: 'G-E36TVKC3N0'
-	// };
-	// onMount(() => {
-	// 	const app = initializeApp(firebaseConfig);
-	// 	const analytics = getAnalytics(app);
-	// });
+	import { initializeApp } from 'firebase/app';
+	import { getAnalytics } from 'firebase/analytics';
+	const firebaseConfig = {
+		apiKey: 'AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4',
+		authDomain: 'qmputah-2022-10-06.firebaseapp.com',
+		databaseURL: 'https://qmputah-2022-10-06-default-rtdb.firebaseio.com',
+		projectId: 'qmputah-2022-10-06',
+		storageBucket: 'qmputah-2022-10-06.appspot.com',
+		messagingSenderId: '677877744052',
+		appId: '1:677877744052:web:8ad4b1d83774b5425072e1',
+		measurementId: 'G-E36TVKC3N0'
+	};
+	onMount(() => {
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	});
 	////////////////////////////////////////////////////////////////////////////
 </script>
 
@@ -33,9 +33,6 @@
 	<meta name="description" content="A tool to compare medical cannabis card pricing in Utah" />
 	<meta name="keywords" content="utah cannabis medical card price" />
 </svelte:head>
-<!-- <br /> -->
-<!-- <br /> -->
-<!-- <br /> -->
 <Header />
 <div class="timeline">
 	<button on:click={() => (renew = false)} id="newCard">My first card</button>
@@ -91,11 +88,9 @@
 	}
 
 	@media (orientation: landscape) {
-	button {
-	
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-
+		button {
+			margin-left: 10%;
+			margin-right: 10%;
+		}
 	}
 </style>

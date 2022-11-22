@@ -2,10 +2,10 @@
 	//https://youtu.be/1ziIf4wOGzE?t=293 new google maps came out Oct 6 2022...
 	//https://storage.googleapis.com/gweb-cloudblog-publish/original_images/deck-12-html-elements.gif
 	import { onMount } from 'svelte';
-    export let data;
+	export let data;
 	export let renew;
 	export let showAll;
-    let qmpsCorrected = data.qmpsCorrected;
+	let qmpsCorrected = data.qmpsCorrected;
 	let qmpsActive = data.qmpsActive;
 	let qmpsRenew = data.qmpsRenew;
 	let selected = 'newPatient';
@@ -24,7 +24,6 @@
 		for (let item of list) {
 			const priceTag = document.createElement('div');
 			priceTag.className = 'price-tag';
-			priceTag.textContent = '$2.5M'; //not sure why this is here... 
 			let lat = item.lat;
 			let lng = item.lng;
 			const marker = new google.maps.Marker({
@@ -55,14 +54,16 @@
         <a href="${item.urlEncoded}">More Info: </a> <img src=/external2.svg width="12" height="12">
         `
 			});
-			map.addListener('click', function() {
-    		if (infoWindow) infoWindow.close();
+			map.addListener('click', function () {
+				if (infoWindow) infoWindow.close();
 			});
-			var activeInfoWindow; 
+			var activeInfoWindow;
 			marker.addListener('click', function () {
-    		if (activeInfoWindow) { activeInfoWindow.close();}
-    		infoWindow.open(map, marker);
-    		activeInfoWindow = infoWindow;
+				if (activeInfoWindow) {
+					activeInfoWindow.close();
+				}
+				infoWindow.open(map, marker);
+				activeInfoWindow = infoWindow;
 			});
 			i++;
 		}
@@ -79,7 +80,7 @@
 		initMap(qmpsActive);
 	}
 	$: if (renew === true) {
-		console.log('true')
+		console.log('true');
 		selected = `renewActive6`;
 		initMap(qmpsRenew);
 	}
@@ -94,12 +95,12 @@
 	$: if (showAll === false) {
 		initMap(qmpsActive);
 	}
-	
-	</script>
+</script>
 
 <svelte:head>
 	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4&v=beta&libraries=marker">
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4&v=beta&libraries=marker"
+	>
 	</script>
 </svelte:head>
 <br />
@@ -117,19 +118,11 @@
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 
-	#buttons {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 50px;
-		padding-top: 20px;
-	}
-
 	@media (orientation: portrait) {
 		#map {
-		height: 500px;
-		width: 90%;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	    }
+			height: 500px;
+			width: 90%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
 	}
 </style>

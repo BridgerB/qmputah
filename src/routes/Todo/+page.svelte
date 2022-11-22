@@ -1,5 +1,5 @@
 <script>
-	export const prerender = false
+	export const prerender = false;
 	export let data;
 	let qmpsBroken = data.qmpsBroken;
 	let filter = '';
@@ -90,7 +90,8 @@
 		margin: 10px;
 	}
 
-	a, a:visited {
+	a,
+	a:visited {
 		color: black;
 	}
 
@@ -114,5 +115,4 @@
 		width: 70%;
 		margin: auto;
 	}
-	
 </style>

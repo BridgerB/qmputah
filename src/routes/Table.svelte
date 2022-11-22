@@ -1,6 +1,6 @@
 <script>
 	export let data;
-    export let renew;
+	export let renew;
 	export let showAll;
 	let qmpsActive = data.qmpsActive;
 	let qmpsInactive = data.qmpsInactive;
@@ -62,7 +62,6 @@
 	<p>Did I miss one?</p>
 	<p>Email me at:</p>
 	<p>contact@qmputah.com</p>
-
 </div>
 
 <style>
@@ -116,7 +115,8 @@
 		font-size: 1rem;
 	}
 
-	a, a:visited {
+	a,
+	a:visited {
 		color: black;
 	}
 
@@ -156,13 +156,7 @@
 		}
 
 		input {
-			color: black;
-			line-height: 45px;
 			width: 135%;
-			margin: 10px;
-			font-size: 1rem;
 		}
-
 	}
-    
 </style>

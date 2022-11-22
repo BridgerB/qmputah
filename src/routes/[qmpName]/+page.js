@@ -1,7 +1,6 @@
 //I am likely doing this the wrong way...
 import { error } from '@sveltejs/kit';
 export async function load({ fetch, params }) {
-
   let id = 999;
   switch (params.qmpName) {
     case 'Synergy-Health-and-Wellness-Clinic':
@@ -510,10 +509,8 @@ export async function load({ fetch, params }) {
     default:
       console.log(`QMP not found: `, params.qmpName);
   }
-
   const response = await fetch(`https://qmputah-2022-10-06-default-rtdb.firebaseio.com/priceHistory/${id}.json?print=pretty`)
   const priceHistory = await response.json()
-
   const response3 = await fetch(`https://qmputah-2022-10-06-default-rtdb.firebaseio.com/qmpsCorrected/${id}.json?print=pretty`);
   const qmp = await response3.json()
   return {

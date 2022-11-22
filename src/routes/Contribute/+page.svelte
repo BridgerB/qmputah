@@ -21,66 +21,67 @@
 	////////////////////////////////////////////////////////////////////////////
 </script>
 
-
 <body>
-
-<header>
-	<h1>Contribute</h1>
-</header>
-
-<h3>Price Comparison Chart</h3>
-<br />
-<table>
-	<tr>
-		<th />
-		<th>Best price</th>
-		<th>Average price</th>
-		<th>Worst price</th>
-	</tr>
-	<tr>
-		<td>Initial Visit</td>
-		<td>100</td>
-		<td>250</td>
-		<td>500</td>
-	</tr>
-	<tr>
-		<td>First Renewal</td>
-		<td>50</td>
-		<td>190</td>
-		<td>250</td>
-	</tr>
-	<tr>
-		<td>Second Renewal</td>
-		<td>50</td>
-		<td>190</td>
-		<td>250</td>
-	</tr>
-	<tr>
-		<td>Total</td>
-		<td>200</td>
-		<td>630</td>
-		<td>1000</td>
-	</tr>
-</table>
-<br />
-
-<div>
-	<p>This tool can save you up to $800 in your first year of having a Medical Cannabis Card in Utah.</p>
-	<p>Please donate a portion of those savings to keep this site accurate and opperating.</p>
-	<p>Minimum donation is only $1 and will only take a moment.</p>
-	<ul>
-	<li><a href="https://www.buymeacoffee.com/BridgerB" target="_blank">Buy Me A Coffee</a><br /></li>
-	<li><a href="https://paypal.me/BridgerBelyea" target="_blank">PayPal</a><br /></li>
-	<li><a href="https://ko-fi.com/bridgerb" target="_blank">Ko-fi (Offers Apple Pay)</a></li>
-	</ul>
-</div>
-<div>
-	<p>If you are unable to donate please help out by suggesting or offering improvements to this projet on <a href="https://github.com/BridgerB/qmputah" target="_blank">github</a>.</p>
-</div>
+	<header>
+		<h1>Contribute</h1>
+	</header>
+	<h3>Price Comparison Chart</h3>
+	<br />
+	<table>
+		<tr>
+			<th />
+			<th>Best price</th>
+			<th>Average price</th>
+			<th>Worst price</th>
+		</tr>
+		<tr>
+			<td>Initial Visit</td>
+			<td>100</td>
+			<td>250</td>
+			<td>500</td>
+		</tr>
+		<tr>
+			<td>First Renewal</td>
+			<td>50</td>
+			<td>190</td>
+			<td>250</td>
+		</tr>
+		<tr>
+			<td>Second Renewal</td>
+			<td>50</td>
+			<td>190</td>
+			<td>250</td>
+		</tr>
+		<tr>
+			<td>Total</td>
+			<td>200</td>
+			<td>630</td>
+			<td>1000</td>
+		</tr>
+	</table>
+	<br />
+	<div>
+		<p>
+			This tool can save you up to $800 in your first year of having a Medical Cannabis Card in
+			Utah.
+		</p>
+		<p>Please donate a portion of those savings to keep this site accurate and opperating.</p>
+		<p>Minimum donation is only $1 and will only take a moment.</p>
+		<ul>
+			<li>
+				<a href="https://www.buymeacoffee.com/BridgerB" target="_blank">Buy Me A Coffee</a><br />
+			</li>
+			<li><a href="https://paypal.me/BridgerBelyea" target="_blank">PayPal</a><br /></li>
+			<li><a href="https://ko-fi.com/bridgerb" target="_blank">Ko-fi (Offers Apple Pay)</a></li>
+		</ul>
+	</div>
+	<div>
+		<p>
+			If you are unable to donate please help out by suggesting or offering improvements to this
+			projet on <a href="https://github.com/BridgerB/qmputah" target="_blank">github</a>.
+		</p>
+	</div>
 </body>
-
-
-
 
 <style>
 	div {
@@ -138,7 +139,7 @@
 	tr:nth-child(even) {
 		background: #dfd3ae;
 	}
-	
+
 	tr:nth-child(odd) {
 		background: #ebe3cd;
 	}
@@ -154,23 +155,17 @@
 		text-align: center;
 	}
 
-
-
-		p {
-			font-size: 1.2rem;
-		}
-	
+	p {
+		font-size: 1.2rem;
+	}
 
 	@media (orientation: landscape) {
-
 		table {
 			max-width: 700px;
-
 		}
 		body {
-		max-width: 1200px;
-		margin: auto;
+			max-width: 1200px;
+			margin: auto;
 		}
 	}
-	
 </style>
