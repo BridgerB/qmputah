@@ -24,14 +24,13 @@
 		for (let item of list) {
 			const priceTag = document.createElement('div');
 			priceTag.className = 'price-tag';
-			priceTag.textContent = '$2.5M';
+			priceTag.textContent = '$2.5M'; //not sure why this is here... 
 			let lat = item.lat;
 			let lng = item.lng;
 			const marker = new google.maps.Marker({
 				map,
 				position: { lat, lng },
 				content: priceTag,
-
 				label: item[selected] ? `$${item[selected]}` : ``,
 				icon: item[selected]
 					? {
@@ -56,8 +55,14 @@
         <a href="${item.urlEncoded}">More Info: </a> <img src=/external2.svg width="12" height="12">
         `
 			});
+			map.addListener('click', function() {
+    		if (infoWindow) infoWindow.close();
+			});
+			var activeInfoWindow; 
 			marker.addListener('click', function () {
-				infoWindow.open(map, marker);
+    		if (activeInfoWindow) { activeInfoWindow.close();}
+    		infoWindow.open(map, marker);
+    		activeInfoWindow = infoWindow;
 			});
 			i++;
 		}
@@ -82,6 +87,7 @@
 		selected = `newPatient`;
 		initMap(qmpsActive);
 	}
+
 	$: if (showAll === true) {
 		initMap(qmpsCorrected);
 	}
@@ -93,7 +99,8 @@
 
 <svelte:head>
 	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4&v=beta&libraries=marker"></script>
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4&v=beta&libraries=marker">
+	</script>
 </svelte:head>
 <br />
 
@@ -125,5 +132,4 @@
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	    }
 	}
-    
 </style>
