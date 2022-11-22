@@ -379,9 +379,9 @@ exports.axios = functions.runWith({ timeoutSeconds: 240, memory: "2GB" }).pubsub
     updatedPrices.updateMethod = `web`;
     ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
     refqmps.child(qmpID).update(updatedPrices)
-    // qmpID = 38 //38 belongs to Cedar Psychiatry???
-    // ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
-    // refqmps.child(qmpID).update(updatedPrices)
+    qmpID = 37
+    ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
+    refqmps.child(qmpID).update(updatedPrices)
     qmpID = 109
     ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
     refqmps.child(qmpID).update(updatedPrices)
@@ -391,6 +391,28 @@ exports.axios = functions.runWith({ timeoutSeconds: 240, memory: "2GB" }).pubsub
     qmpID = 144
     ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
     refqmps.child(qmpID).update(updatedPrices)
+    qmpID = 165
+    ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
+    refqmps.child(qmpID).update(updatedPrices)
+    qmpID = 166
+    ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
+    refqmps.child(qmpID).update(updatedPrices)
+    qmpID = 167
+    ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
+    refqmps.child(qmpID).update(updatedPrices)
+    qmpID = 168
+    ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
+    refqmps.child(qmpID).update(updatedPrices)
+    qmpID = 169
+    ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
+    refqmps.child(qmpID).update(updatedPrices)
+    qmpID = 170
+    ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
+    refqmps.child(qmpID).update(updatedPrices)
+    qmpID = 171
+    ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
+    refqmps.child(qmpID).update(updatedPrices)
+
   } catch (err) { failures.push(err) }
 
   try {

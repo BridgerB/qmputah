@@ -506,6 +506,36 @@ export async function load({ fetch, params }) {
     case 'Rebirth-Obgyn':
       id = 161;
       break;
+    case 'Utah-Canna-Layton':
+      id = 162;
+      break;
+    case 'Cedar-Psychiatry-Draper':
+      id = 163;
+      break;
+    case 'Cedar-Psychiatry-Murray':
+      id = 164;
+      break;
+    case 'Medical-Cannabis-of-Utah-Bountiful':
+      id = 165;
+      break;
+    case 'Medical-Cannabis-of-Utah-Clinton':
+      id = 166;
+      break;
+    case 'Medical-Cannabis-of-Utah-Riverton':
+      id = 167;
+      break;
+    case 'Medical-Cannabis-of-Utah-Sugar-House':
+      id = 168;
+      break;
+    case 'Medical-Cannabis-of-Utah-Clearfield':
+      id = 169;
+      break;
+    case 'Medical-Cannabis-of-Utah-Layton':
+      id = 170;
+      break;
+    case 'Medical-Cannabis-of-Utah-West-Valley':
+      id = 171;
+      break;
     default:
       console.log(`QMP not found: `, params.qmpName);
   }
