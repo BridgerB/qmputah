@@ -104,6 +104,24 @@ exports.puppeteer = functions.runWith({ timeoutSeconds: 240, memory: "2GB" }).pu
     })
     ref.child(qmpID).update({ [yearMonthDay]: updatedPrices });
     refqmps.child(qmpID).update(updatedPrices)
+    qmpID = 174
+    ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
+    refqmps.child(qmpID).update(updatedPrices)
+    qmpID = 175
+    ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
+    refqmps.child(qmpID).update(updatedPrices)
+    qmpID = 176
+    ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
+    refqmps.child(qmpID).update(updatedPrices)
+    qmpID = 177
+    ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
+    refqmps.child(qmpID).update(updatedPrices)
+    qmpID = 178
+    ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
+    refqmps.child(qmpID).update(updatedPrices)
+    qmpID = 179
+    ref.child(qmpID).update({ [yearMonthDay]: updatedPrices })
+    refqmps.child(qmpID).update(updatedPrices)
   } catch (err) { failures.push(err) }
 
   //   response = await axios.get('https://empathetix.com/')
