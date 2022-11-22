@@ -243,7 +243,7 @@ export async function load({ fetch, params }) {
     case 'Dangerfield-Therapeutics':
       id = 74;
       break;
-    case 'Empathetix':
+    case 'Empathetix-Millcreek':
       id = 75;
       break;
     case 'Utah-Canna-Salt-Lake-City':
@@ -535,6 +535,30 @@ export async function load({ fetch, params }) {
       break;
     case 'Medical-Cannabis-of-Utah-West-Valley':
       id = 171;
+      break;
+    case 'Canna-Buddy-South-Jordan':
+      id = 172;
+      break;
+    case 'Canna-Buddy-Sandy':
+      id = 173;
+      break;
+    case 'Empathetix-Salt-Lake-City':
+      id = 174;
+      break;
+    case 'Empathetix-Cottonwood-Heights':
+      id = 175;
+      break;
+    case 'Empathetix-South-Jordan':
+      id = 176;
+      break;
+    case 'Empathetix-Ogden':
+      id = 177;
+      break;
+    case 'Empathetix-Provo':
+      id = 178;
+      break;
+    case 'Empathetix-St-George':
+      id = 179;
       break;
     default:
       console.log(`QMP not found: `, params.qmpName);
