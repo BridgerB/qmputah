@@ -93,7 +93,7 @@
 		const app = initializeApp(firebaseConfig);
 		const analytics = getAnalytics(app);
 		await new Promise((resolve) => setTimeout(resolve, 500));
-		initMap();
+		// initMap();
 		google.charts.load('current', { packages: ['corechart'] });
 		google.charts.setOnLoadCallback(drawChart);
 		const interval = setInterval(() => {
@@ -111,11 +111,7 @@
 </script>
 
 <svelte:head>
-	<script
-		await
-		defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4&callback=initMap&v=weekly"
-	></script>
+	<script on:load={initMap}	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4"></script>
 	<script await defer src="https://www.gstatic.com/charts/loader.js"></script>
 </svelte:head>
 
@@ -169,7 +165,7 @@
 </body>
 
 <style>
-	@media (orientation: portrait) {
+	/* @media (orientation: portrait) { */
 		.grid-container {
 			display: grid;
 			grid-template-columns: 1fr;
@@ -197,5 +193,5 @@
 
 		/* .info {
 		} */
-	}
+	/* } */
 </style>

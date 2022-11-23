@@ -1,7 +1,6 @@
 <script>
 	//https://youtu.be/1ziIf4wOGzE?t=293 new google maps came out Oct 6 2022...
 	//https://storage.googleapis.com/gweb-cloudblog-publish/original_images/deck-12-html-elements.gif
-	import { onMount } from 'svelte';
 	export let data;
 	export let renew;
 	export let showAll;
@@ -14,7 +13,7 @@
 			zoom: 11,
 			center: { lat: 40.6669, lng: -111.888 },
 			mapId: '4757475467178341', //https://mapstyle.withgoogle.com/
-			// gestureHandling: "greedy", //<<<< Neat option
+			gestureHandling: "greedy", //<<<< Neat option
 			mapTypeControl: false,
 			streetViewControl: false,
 			fullscreenControl: false,
@@ -69,10 +68,6 @@
 		}
 	}
 
-	onMount(async () => {
-		await new Promise((resolve) => setTimeout(resolve, 500));
-		initMap(qmpsActive);
-	});
 	function updateMap() {
 		initMap(qmpsCorrected);
 	}
@@ -98,10 +93,7 @@
 </script>
 
 <svelte:head>
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4&v=beta&libraries=marker"
-	>
-	</script>
+	<script on:load={initMap(qmpsActive)} src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-xQRwvNDSuujhcAwsXoxIJMoyfqhoq_4"></script>
 </svelte:head>
 <br />
 
