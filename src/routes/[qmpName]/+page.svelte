@@ -51,7 +51,7 @@
 		const map = new google.maps.Map(document.getElementById('map'), {
 			zoom: 14,
 			center: { lat: lat, lng: lng },
-			mapId: '4757475467178341',
+			mapId: '37d2706ea7c20292',
 			gestureHandling: 'greedy', //<<<< Neat option
 			backgroundColor: '#212121'
 			// mapTypeControl: false // disables map/satellite toggle
@@ -63,12 +63,12 @@
 			icon: newPatient
 				? {
 						url: '/bubble.png',
-						scaledSize: new google.maps.Size(60, 35),
-						labelOrigin: new google.maps.Point(30, 15)
+						scaledSize: new google.maps.Size(40, 35),
+						labelOrigin: new google.maps.Point(20, 15)
 				  }
 				: {
 						url: '/redX.png',
-						scaledSize: new google.maps.Size(35, 35),
+						scaledSize: new google.maps.Size(15, 15),
 						labelOrigin: new google.maps.Point(30, 15)
 				  }
 		});
